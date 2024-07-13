@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (localStorage.getItem("user")) {
             existingContainer.style.display = "block";
             existingBtn.innerText = "Login as existing user";
+        } else {
+            existingContainer.style.display = "none";
         }
     });
 
