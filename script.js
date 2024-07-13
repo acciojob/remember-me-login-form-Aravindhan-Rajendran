@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check for existing user on page load
     if (localStorage.getItem("user")) {
         existingContainer.style.display = "block";
-        existingBtn.innerText = "Login as " + localStorage.getItem("user");
+        existingBtn.innerText = "Login as existing user";
     }
 
     // Handle submit button click
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alert("Logged in as " + user.value);
         if (localStorage.getItem("user")) {
             existingContainer.style.display = "block";
-            existingBtn.innerText = "Login as " + localStorage.getItem("user");
+            existingBtn.innerText = "Login as existing user";
         }
     });
 
